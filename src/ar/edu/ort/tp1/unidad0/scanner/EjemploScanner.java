@@ -12,7 +12,7 @@ public class EjemploScanner {
 
 	public static void main(String[] args) {
 		System.out.println("Ingrese un numero entre 1 y 10");
-		System.out.println(String.valueOf(numero));
+		numero = input.nextInt();
 		input.nextLine(); // limpiamos el buffer
 		
 		System.out.println("Ingrese una letra");

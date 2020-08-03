@@ -19,5 +19,8 @@ public class ArrayListsDentroDeObjetos {
 	
 	public static void main(String[] args) {
 		
+		ArrayListsDentroDeObjetos test = new ArrayListsDentroDeObjetos();
+		test.agregarSocio(new Persona("Juan", "Perez", 1234));
+		
 	}
 }

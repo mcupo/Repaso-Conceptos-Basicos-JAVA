@@ -26,25 +26,28 @@ public class EjemploArrayList {
 	    
 	    System.out.println(autos);
 	    
+	    System.out.println("Recorrer el ArrayList usando un for:");
+	    for (int i=0; i<personas.size();i++){
+	    	System.out.println(personas.get(i).getNombre() + " " + personas.get(i).getApellido());
+	    }
+	    
+	    System.out.println("Recorrer el ArrayList usando un foreach:");
 	    for (Persona p : personas){
 	    	System.out.println(p.getNombre() + " " + p.getApellido());
 	    }
 	    
 	 // Búsqueda de la persona por nro de documento.
-	 // creamos una variable auxiliar donde dejaremos
-	 // el elemento buscado, si lo encontramos.
+	 // Creamos una variable auxiliar donde dejaremos el elemento buscado, si lo encontramos.
 	 Persona personaBuscada = null;
 	 int indice = 0;
-	 // buscamos mientras no hayamos llegado al final
-	 // de la estructura y no hayamos encontrado el
+	 // Buscamos mientras no hayamos llegado al final de la estructura y no hayamos encontrado el
 	 // elemento que estamos buscando.
 	 while (indice < personas.size() && personaBuscada == null) {
 	 	if (personas.get(indice).getDni() == 1234) {
 	 		// si la encontramos, la asignamos al auxiliar
 	 		personaBuscada = personas.get(indice);
 	 	} else {
-	 		// incrementamos el índice para
-	 		// pasar al siguiente elemento
+	 		// incrementamos el índice para pasar al siguiente elemento
 	 		indice++;
 	 	}
 	 }

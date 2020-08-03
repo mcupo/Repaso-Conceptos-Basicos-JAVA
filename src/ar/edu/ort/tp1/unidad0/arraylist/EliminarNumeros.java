@@ -14,15 +14,13 @@ public class EliminarNumeros {
 		
 		// Eliminando todos los números pares de la colección.
 		int indice = 0;
-		// buscamos mientras no hayamos llegado al final
-		// de la estructura.
+		// buscamos mientras no hayamos llegado al final de la estructura.
 		while (indice < numeros.size()) {
 			if (numeros.get(indice) % 2 == 0) {
 				// si es par lo quitamos
 				numeros.remove(indice);
 			} else {
-				// incrementamos el índice para
-				// pasar al siguiente elemento
+				// incrementamos el índice para pasar al siguiente elemento
 				indice++;
 			}
 		}
